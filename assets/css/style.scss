@@ -65,18 +65,47 @@ body{
     font-size: 1.5rem;
     display: none;
 }
+
+
 .menuRollPage{
     transition: .4s ease;
     width: 100%;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
     top: 71px;
+    margin-top: -100%;
     padding: 10px;
     color: var(--color);
-    height: 300px;
+    // height: 300px;
     background-color: rgb(32, 32, 32);
 }
+
+.menuRollPage nav{
+    padding: 10px;
+    width: 100%;
+    font-family: var(--baseFont);
+    text-transform: uppercase;
+}
+.menuRollPage nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menuRollPage nav ul li{
+    width: 100%;
+    padding: 15px 15px;
+    background-color: #e2e2e207;
+    margin: 2px;
+    text-align: left;
+}
+.menuRollPage nav ul li a{
+    color: var(--color);
+    text-decoration: none;
+}
+
 @media screen and (max-width:650px) {
     .linksAcess, .configPage{
         display: none;

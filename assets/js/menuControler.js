@@ -4,6 +4,7 @@ const Controler = document.querySelector('#ModalMenuControler');
 Controler.addEventListener('click', () =>{
 
     const StateAtual = window.getComputedStyle(Menu);
+    //  O getComputedStyle retorna o style do elemento por completo
 
     if (StateAtual.opacity === "1"){
         console.log('Invisivel');
