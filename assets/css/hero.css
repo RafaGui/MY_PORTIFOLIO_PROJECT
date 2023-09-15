@@ -1,0 +1,70 @@
+.hero{
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    height: 400px;
+    background: url(/public/img/l.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blockHero{
+    width: 100%;
+    max-width: 1030px;
+    font-family: var(--baseFont);
+    user-select: none;
+    color: var(--color);
+}
+@media screen and (max-width:940px) {
+    .blockHero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.title h2{
+    font-size:3rem;
+    font-family: var(--baseFont);
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363);
+}
+.title p:first-child{
+    margin-bottom: -10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+}
+.title p:last-child{
+    margin-top: -5px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+}
+.buttsHero {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.buttsHero a{
+    text-decoration: none;
+    color: var(--color);
+}
+.buttsHero a:first-child{
+    font-size: 2rem;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363);
+}
+.buttsHero a:last-child{
+    background-color: var(--color);
+    border-radius: 3px;
+    padding: 3px 10px;
+    color: var(--baseColor);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.233);
+}
+.descpt{
+    margin-top: 10px;
+    font-size: .8rem;
+    color: #ffffff80;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+}

@@ -6,6 +6,7 @@
 :root{
     --color:#e2e2e2;
     --baseColor:#1E1E1E;
+    --colorAcess: #2185e2;
 
     --baseFont:'Poppins', sans-serif;
     --secondFont:'Roboto', sans-serif;
@@ -17,7 +18,7 @@ body{
 }
 .firstFase{
     width: 100%;
-    background-color: var(--color);
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -32,6 +33,7 @@ body{
     font-size: 1.3rem;
     font-weight: 900;
     font-family:var(--baseFont);
+    user-select: none;
 }
 .linksAcess ul{
     list-style: none;
@@ -48,15 +50,86 @@ body{
     text-decoration: none;
     font-family: var(--baseFont);
     font-size: .9rem;
+    cursor: pointer;
 }
 .configPage{
     font-size: 1.2rem;
-    color: var(--baseColor);
+    // color: var(--baseColor);
     position: absolute;
-    right: 20px;
+    right: 2rem;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 11;
 }
+
+.configModal{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: .3s linear;
+    pointer-events: none;
+}
+.modalOn{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: var(--color);
+    z-index: 10;
+    border-radius: 5px;
+    position: relative;
+    font-family: var(--baseFont);
+}
+.SettCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.closeModalConf{
+    border-radius: 0px 3px 0px 0px;
+    background-color: #ca3737;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    color: var(--color);
+    cursor: pointer;
+}
+.infoModal{
+    padding: 10px;
+}
+.infoModal .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.options span{
+    color: #1e1e1e50;
+    width: 100%;
+    font-size: .8rem;
+}
+.infoModal a{
+    width: 100%;
+    padding: 4px 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--baseColor);
+    color: var(--color);
+    border-radius: 3px;
+}
+
+
 .menuPage{
     position: absolute;
     left: 30px;
@@ -65,22 +138,19 @@ body{
     font-size: 1.5rem;
     display: none;
 }
-
-
 .menuRollPage{
     transition: .4s ease;
     width: 100%;
-    position: absolute;
+    position: fixed;
     opacity: 0;
     pointer-events: none;
     top: 71px;
     margin-top: -100%;
     padding: 10px;
     color: var(--color);
-    // height: 300px;
+    z-index: 9;
     background-color: rgb(32, 32, 32);
 }
-
 .menuRollPage nav{
     padding: 10px;
     width: 100%;
@@ -105,7 +175,6 @@ body{
     color: var(--color);
     text-decoration: none;
 }
-
 @media screen and (max-width:650px) {
     .linksAcess, .configPage{
         display: none;
@@ -113,4 +182,117 @@ body{
     .menuPage{
         display: unset;
     }
+}
+
+.contatoModal{
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d; /////////////////////
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: var(--baseFont);
+    color: var(--baseColor);
+    transition: .2s linear;
+    // opacity: 0;
+}
+.contatoOpen{
+    background-color: var(--color);
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: .5s linear;
+}
+
+
+.contatoOpen{
+    position: relative;
+    border-radius: 3px;
+}
+.closeContato{
+    background-color: #ca3737;
+    color: var(--color);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    border-radius: 0px 3px 0px 0px;
+    cursor: pointer;
+}
+.infoContato{
+    padding: 10px;
+}
+.infoContato h2{
+    margin-bottom: 20px;
+}
+.infoContato p{
+    font-size: .8rem;
+    color: #1e1e1e50;
+}
+
+
+main{
+    position: relative;
+    margin-top: 71px;
+}
+.heroPage{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apresentationBlock{
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+}
+.textsPressentation{
+    font-family: var(--baseFont);
+    background-color: red;
+}
+.nameItens{
+    color: var(--baseColor);
+    line-height: 35px;
+}
+.nameItens h1{
+    font-size: 2.5rem;
+}
+.nameItens p{
+    font-size: 1.2rem;
+}
+
+.gitDownCV{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.gitDownCV i{
+    font-size: 1.5rem;
+}
+.gitDownCV a{
+    background-color: var(--baseColor);
+    color: var(--color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.descriptions{
+    font-size: .8rem;
+    color: #1e1e1e9a;
+}
+
+
+.midPage{
+    width: 100%;
+    // padding: 10px;
 }

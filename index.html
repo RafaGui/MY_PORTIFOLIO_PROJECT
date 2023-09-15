@@ -6,45 +6,152 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/table.css">
     <title>Rafael William</title>
 </head>
 <body>
+    <!-- COMEÇAR COM O HEADER TORNADO-O RESPONSIVO E BONITINHO -->
     <header class="topPage">
         <div class="firstFase">
             <div class="logo"><p>Rafael William</p></div>
             <nav class="linksAcess">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="index.html" ><i class="ri-home-line"></i> Inicio</a></li>
+                    
+                    <li><a href="https://github.com/RafaGui" target="_blank"><i class="ri-github-line"></i> GitHub</a></li>
+
+                    <li class="modalContato"><a><i class="ri-phone-line"></i> Contato</a></li>
                 </ul>
             </nav>
-            <div class="configPage">
-                <i class='bx bxs-cog'></i>
+            <div class="configPage modalConfig">
+                <i class="ri-sun-line"></i>
             </div>
             <div class="menuPage" id="ModalMenuControler">
-                <i class='bx bx-menu-alt-left'></i>
+                <a class='bx bx-menu-alt-left '></a>
             </div>
         </div>
-        <div class="secondFase">
-            <div class="menuRollPage" id="modalMenu">
-                <nav>
+        <div class="modalConf">
+            <div class="blocoModal">
+                <div class="closeMod">
+                    <i class="ri-close-line"></i>
+                </div>
+                <div class="infContato">
+                    <h2>Contato</h2>
+                    <legend>Acesse minhas redes sociais</legend>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><i class='bx bxs-cog'></i></li>
+                        <li><a href="https://www.instagram.com/rafaa_will/" target="_blank"><i class="ri-instagram-line"></i> Instagram</a></li>
+                        <li><a href="https://github.com/RafaGui" target="_blank"><i class="ri-github-fill"></i> GitHub</a></li>
+                        <li><a href="https://wa.me/5547996660361?text=Ol%C3%A1%2C+tenho+interesse+no+seu+servi%C3%A7o." target="_blank"><i class="ri-whatsapp-line"></i> Whatsapp</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </div>
+
+
     </header>
-    <!-- COMEÇAR COM O HEADER TORNDO-O RESPONSIVO E BONITINHO -->
+    <!-- FIM HEADER -->
 
 
-    <script src="assets/js/menuControler.js"></script>
+    <main class="midPage">
+        <section class="hero">
+            <div class="blockHero">
+                <div class="title">
+                    <p>Eu Me Chamo</p>
+                    <h2>Rafael William</h2>
+                    <p>Em que posso ajuda-lo?</p>
+                </div>
+                <div class="buttsHero">
+                    <a href="#"><i class="ri-bar-chart-line"></i></a>
+                    <a href="public/curriculo/CVSP.pdf" download><i class="ri-file-download-line"></i> Baixar meu cv</a>
+                </div>
+                <div class="descpt">
+                    <p>Analise e Desenvolvimento de Sistemas</p>
+                    <p>Web Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="anumProd">
+            <div class="titleSep">Meus Trabalhos</div>
+            <div class="blockBoxs">
+
+
+                <div class="box bk1">
+                    <div class="image">
+                        <div class="photoBK">
+                            <img src="public/img/block01.jpg" alt="imagemProjeto">
+                        </div>
+                    </div>
+                    <div class="textBlock">
+                        <h3>Landing Pages</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, hic!</p>
+                        <ul>
+                            <li><i class='bx bxl-html5'></i></li>
+                            <li><i class='bx bxl-sass'></i></li>
+                            <li><i class="ri-javascript-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="box bk2">
+                    <div class="image">
+                        <div class="photoBK">
+                            <img src="public/img/block02.jpg" alt="imagemProjeto">
+                        </div>
+                    </div>
+                    <div class="textBlock">
+                        <h3>Portifólios</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, hic!</p>
+                        <ul>
+                            <li><i class='bx bxl-html5'></i></li>
+                            <li><i class='bx bxl-sass'></i></li>
+                            <li><i class="ri-javascript-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="box bk3">
+                    <div class="image">
+                        <div class="photoBK">
+                            <img src="public/img/block03.jpg" alt="imagemProjeto">
+                        </div>
+                    </div>
+                    <div class="textBlock">
+                        <h3>Lançamento de Produtos</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, hic!</p>
+
+                        <ul>
+                            <li><i class='bx bxl-html5'></i></li>
+                            <li><i class='bx bxl-sass'></i></li>
+                            <li><i class="ri-javascript-fill"></i></li>
+                            <li><i class='bx bxl-php'></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="aboutMe">
+            <h3>sobre mim local</h3>
+        </section>
+
+        <section class="calcPrice">
+            <h3>Local para calcular valor de serviços</h3>
+        </section>
+
+    </main>
+    <footer class="endPage">
+        <h2>Fim da página</h2>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
