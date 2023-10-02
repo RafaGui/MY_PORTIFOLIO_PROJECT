@@ -7,6 +7,14 @@
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/calcPrice.css">
+    <link rel="stylesheet" href="assets/css/aboutMe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -60,32 +68,37 @@
 
     <main class="midPage">
         <section class="hero">
+            <div class="opacityToUp">
+            </div>
+            <div class="imagemHero">
+                <img src="public/img/bgHero.webp" alt="">
+            </div>
             <div class="blockHero">
-                <div class="title">
-                    <p>Eu Me Chamo</p>
-                    <h2>Rafael William</h2>
-                    <p>Em que posso ajuda-lo?</p>
-                </div>
-                <div class="buttsHero">
-                    <a href="#"><i class="ri-bar-chart-line"></i></a>
-                    <a href="public/curriculo/CVSP.pdf" download><i class="ri-file-download-line"></i> Baixar meu cv</a>
-                </div>
-                <div class="descpt">
-                    <p>Analise e Desenvolvimento de Sistemas</p>
-                    <p>Web Designer</p>
-                </div>
+                    <div class="title">
+                        <p>Eu Me Chamo</p>
+                        <h2>Rafael William</h2>
+                        <p>Em que posso ajuda-lo?</p>
+                    </div>
+                    <div class="buttsHero">
+                        <a href="#"><i class="ri-bar-chart-line"></i></a>
+                        <a href="public/curriculo/CVSP.pdf" download>Baixar meu cv</a>
+                    </div>
+                    <div class="descpt">
+                        <p>Analise e Desenvolvimento de Sistemas</p>
+                        <p>Web Designer</p>
+                    </div>
             </div>
         </section>
 
         <section class="anumProd">
-            <div class="titleSep">Meus Trabalhos</div>
+            <div class="titleSep">Meu Trabalho</div>
             <div class="blockBoxs">
 
 
                 <div class="box bk1">
                     <div class="image">
                         <div class="photoBK">
-                            <img src="public/img/block01.jpg" alt="imagemProjeto">
+                            <img src="public/img/block01.webp" alt="imagemProjeto">
                         </div>
                     </div>
                     <div class="textBlock">
@@ -103,7 +116,7 @@
                 <div class="box bk2">
                     <div class="image">
                         <div class="photoBK">
-                            <img src="public/img/block02.jpg" alt="imagemProjeto">
+                            <img src="public/img/block02.webp" alt="imagemProjeto">
                         </div>
                     </div>
                     <div class="textBlock">
@@ -121,7 +134,7 @@
                 <div class="box bk3">
                     <div class="image">
                         <div class="photoBK">
-                            <img src="public/img/block03.jpg" alt="imagemProjeto">
+                            <img src="public/img/block03.webp" alt="imagemProjeto">
                         </div>
                     </div>
                     <div class="textBlock">
@@ -140,11 +153,63 @@
         </section>
         
         <section class="aboutMe">
-            <h3>sobre mim local</h3>
+            <div class="blockMe">
+                <div class="blockImage">
+                    <img src="public/img/face.jpg" alt="FaceMe">
+                </div>
+                <div class="blockTxt">
+                    <h2>Olá Mundo!</h2><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolores!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea nihil a maxime odit aliquam, dignissimos in culpa iusto placeat.</p>
+                    <br>
+                    <h4>Minhas Habilidades</h4><br>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="calcPrice">
-            <h3>Local para calcular valor de serviços</h3>
+            
+            <div class="blockCalc">
+                <form>
+                    <fieldset>
+
+                        <legend>Simular Valores</legend>
+
+                        <select name="secService" id="secService">
+                            <option selected disabled>Selecione uma opção de serviço</option>
+                            <option value="valor1">Criação de Landing Page</option>
+                            <option value="valor2">Criação de Portifólio</option>
+                            <option value="valor3">Página para lançamento de produto</option>
+                        </select>
+
+                        <input type="number" name="QtnPages" id="QtnPages" placeholder="Número de páginas">
+
+                        <label for="prazo">Tempo para entrega</label>
+                        <input type="datetime-local" name="prazo" id="prazo">
+
+                        <div class="butsForm">
+                            <button>Calcular</button>
+                            <button>Limpar Dados</button>
+                        </div>
+
+                        <div class="value">
+                            <p>Valor estimado></p>
+                            <h3>R$ 100,00</h3>
+                        </div>
+
+                        <input type="submit" value="Finalizar Orçamento">
+                    </fieldset>
+                </form>
+            </div>
+
         </section>
 
     </main>

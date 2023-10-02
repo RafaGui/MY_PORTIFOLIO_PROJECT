@@ -5,19 +5,53 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color);
-    height: 400px;
-    background: url(/public/img/l.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+}
+.imagemHero{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.imagemHero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40%;
+    animation: imgZoom 3s ease-in-out;
+    user-select: none;
+}
+.opacityToUp{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top, #ffffff, #ffffff00);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 100%;
+    z-index: 9;
 }
 .blockHero{
     width: 100%;
-    max-width: 1030px;
+    max-width: 1000px;
     font-family: var(--baseFont);
     user-select: none;
-    color: var(--color);
+    color: var(--baseColor);
+    z-index: 9;
 }
+@keyframes imgZoom {
+    0%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
 @media screen and (max-width:940px) {
     .blockHero{
         display: flex;
@@ -28,17 +62,19 @@
     }
 }
 .title h2{
-    font-size:3rem;
-    font-family: var(--baseFont);
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363);
+    font-size:3.5rem;
+    /* font-family: var(--baseFont);*/
+    font-family:var(--secondFont);
+    color: var(--baseColor);
+    /* text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363); */
 }
 .title p:first-child{
     margin-bottom: -10px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+    /* text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363); */
 }
 .title p:last-child{
     margin-top: -5px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+    /* text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363); */
 }
 .buttsHero {
     margin-top: 10px;
@@ -49,22 +85,19 @@
 }
 .buttsHero a{
     text-decoration: none;
-    color: var(--color);
+    color: var(--baseColor);
 }
 .buttsHero a:first-child{
     font-size: 2rem;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363);
 }
 .buttsHero a:last-child{
-    background-color: var(--color);
+    border: 1px solid var(--baseColor);
     border-radius: 3px;
     padding: 3px 10px;
     color: var(--baseColor);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.233);
 }
 .descpt{
     margin-top: 10px;
     font-size: .8rem;
-    color: #ffffff80;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.363);
+    color: #000000a4;
 }

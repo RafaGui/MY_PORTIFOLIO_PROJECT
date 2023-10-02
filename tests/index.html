@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cabecinha{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="gerador">Gerar Tarefa</button>
+    <button class="closeBoxIn">Excluir Tarefa</button>
+    <button class="resetTar">Resetar Lista</button>
+
+    <div class="table">
+    
+
+
+    </div>
+    
+
+    <script>
+
+        const btt = document.querySelector('.gerador');
+        const tabela = document.querySelector('.table');
+        const close = document.querySelector('.closeBoxIn');
+        const resTar = document.querySelector('.resetTar')
+
+        var contador = 0;
+
+        btt.addEventListener('click', () => {
+            var blocoDiv = document.createElement("div"); 
+            var titleDiv = document.createElement("h3");
+
+            blocoDiv.className = "cabecinha"
+            titleDiv.textContent = "Tarefa " + contador;
+            contador++;
+
+            blocoDiv.appendChild(titleDiv);
+
+            tabela.appendChild(blocoDiv);
+        })
+
+        close.addEventListener('click', () => {
+            let objeto = document.querySelector('.cabecinha');
+            objeto.remove();
+        })
+
+        resTar.addEventListener('click', () => {
+            tabela.innerHTML = "";
+            contador = 0;
+            
+        })
+
+
+    </script>
+</body>
+</html>

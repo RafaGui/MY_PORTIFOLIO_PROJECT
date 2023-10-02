@@ -1,0 +1,62 @@
+.calcPrice{
+    padding: 10px;
+    /* background-color: rgb(179, 179, 179); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blockCalc{
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+}
+.blockCalc fieldset{
+    padding: 10px;
+    font-family: var(--baseFont);
+    border: 1px solid #00000044;
+    border-radius: 5px;
+    display: flex;
+    /* align-items: start; */
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.blockCalc legend{
+    color: #00000044;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.blockCalc select, input{
+    padding: 6px 10px;
+    font-family: var(--baseFont);
+    outline: none;
+}
+.blockCalc label{
+    font-size: .8rem;
+    margin-top: 10px
+}
+.butsForm{
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 300px;
+}
+.butsForm button{
+    padding: 8px 10px;
+    font-family: var(--baseFont);
+    background-color: rgba(219, 56, 56, 0.801);
+    color: var(--color);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.butsForm button:first-child{
+    background-color: rgba(65, 105, 225, 0.801);
+}
+.blockCalc input[type="submit"]{
+    border: none;
+    background-color: royalblue;
+    color: var(--color);
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

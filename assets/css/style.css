@@ -8,7 +8,7 @@
   --color:#e2e2e2;
   --baseColor:#1E1E1E;
   --colorAcess: #2185e2;
-  --baseFont:"Poppins", sans-serif;
+  --baseFont: "Raleway", sans-serif;
   --secondFont:"Roboto", sans-serif;
 }
 
@@ -322,4 +322,11 @@ main {
 
 .midPage {
   width: 100%;
+}
+
+.endPage {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: var(--baseColor);
 }/*# sourceMappingURL=style.css.map */
