@@ -1,3 +1,4 @@
+window.alert("Site em desenvolvimento");
 // CRIAR AS FUNÇÕES PARA ABRIR OS MODAISA
 // const buttOpenModal = document.querySelector('.openMod');
 
