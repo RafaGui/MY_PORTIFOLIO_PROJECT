@@ -1,4 +1,3 @@
-alert("Site em desenvolvimento");
 // CRIAR AS FUNÇÕES PARA ABRIR OS MODAISA
 // const buttOpenModal = document.querySelector('.openMod');
 
@@ -28,7 +27,7 @@ alert("Site em desenvolvimento");
 const buttOpenContato = document.querySelector('.modalContato');
 const modalContato = document.querySelector('.modalConf');
 const buttCloseContato = document.querySelector('.closeMod');
-
+alert("Site em desenvolvimento");
 buttCloseContato.addEventListener('click', () => {
     modalContato.style.opacity = "0";
     modalContato.style.pointerEvents = "none";
